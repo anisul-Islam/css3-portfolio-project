@@ -1,0 +1,201 @@
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+
+/* navbar designing starts here */
+.nav-logo{
+    text-align: left;
+}
+
+.nav-heading h1{
+    text-align: right;    
+}
+
+.navbar-menu{            
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+ .navbar-menu a{   
+   text-decoration: none;
+   color: white;
+   padding: 5px 10px;
+   background-color: transparent;
+   margin: 20px 0;   
+   border-radius: 10px;  
+   font-size: 1.2rem;
+}
+/* navbar designing ends here */
+
+
+
+/* profile designing starts here  */
+.profile .top-weather-icon{
+  position: absolute;
+  right: 140px;
+  top: 20px; 
+  width: 120px; 
+  transition: width 2s, transform 2s;
+}
+
+.profile .top-weather-icon:hover{
+   width: 140px;
+}
+
+
+.profile-desc h1{
+    font-size: 3rem;
+    
+}
+
+.profile-desc p{   
+    color: gray;  
+    margin: 0 auto; 
+    width: 50%; 
+    text-align: center;  
+    margin-bottom: 10px; 
+}
+
+.profile .bottom-weather-icon{
+    position: absolute;
+    left: 140px;
+    bottom: 20px;
+    width: 120px; 
+    transition: width 2s, transform 2s;
+} 
+
+.profile .bottom-weather-icon:hover{
+    width: 140px;   
+} 
+
+/* profile designing ends here  */
+
+
+/* tutorial designing starts here  */
+
+
+
+.all-subjects{
+    /* height: 550px; */
+    /* overflow: scroll; */
+}
+
+.subject-card{
+   padding: 15px 20px;
+   
+}
+
+.subject-card .subject-title{
+    width: 87%;
+}
+/* tutorial designing starts here  */
+
+
+
+/* about-me designing starts here  */
+
+.about-me{
+   
+    background-color: #39a4ac;
+    color: white;
+    font-family: 'Montserrat', sans-serif; 
+    padding: 1% 7%;  
+    text-align: center; 
+}
+
+.aboutme-image{
+    margin-top: 100px;
+}
+
+.aboutme-image img{   
+    height: 270px;
+    width: 250px; 
+}
+.aboutme-desc p{
+    text-align: left;
+}
+
+/* about-me designing ends here  */
+
+
+
+
+/* professional-experience designing starts here  */
+.professional-experience{
+    padding: 1% 5%;      
+}
+
+/* .professional-experience .card{
+   height: 100vh;    
+} */
+/* professional-experience designing ends here  */
+
+
+
+
+
+
+/* achievement-contact div designing starts here  */
+.contact button{           
+    width: 150px;   
+}
+
+.contact-links{
+    text-align: center; 
+    position: relative;     
+} 
+
+.media-buttons{
+    position: absolute;
+    margin-top: 200px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn{
+    margin: 5px;
+    width: 80px;
+}
+
+.achievement{
+    padding-right: 50px;
+}
+/* achievement-contact div designing ends here  */
+
+
+
+/* footer designing starts here */
+.footer-menu{
+    margin-top: 12px;
+}
+
+.footer-menu a{
+    display: inline;
+    font-size: 1rem;
+    margin: 10px;
+}
+/* footer designing ends here */
+
+
+
+
+
+
+
+
+
+
+    

@@ -1,0 +1,543 @@
+/*for mobile devices */
+*{
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;   
+}
+
+body{
+    margin: 0;
+ }
+
+h1{  
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+h2{    
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+ a{
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none; 
+ }
+
+p{
+    font-size: 1.2rem;    
+    text-align: justify;          
+}
+
+.dotted-hr{
+    border:dotted 6px white;
+    border-bottom: none;
+    margin: 20px auto;
+    width: 70px;
+}
+
+
+/* column design for mobile phones starts here */
+[class*="col-"] {
+    float: left;
+    padding: 10px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+/* column design for mobile phones ends here */
+
+
+
+/* navbar design starts here  */
+ .navbar{
+     background-color: #40868b;
+     /* background-image: linear-gradient(to right, green, orange); */
+     padding: 1% 7%;
+     text-align: center;
+ }
+
+ .nav-heading h1{
+    color: white; 
+    margin: 0;    
+    padding-top: 10px;   
+ }
+
+ .navbar-menu{
+     display: flex;
+     flex-direction: column;  
+     text-transform: uppercase; 
+ }
+
+.navbar-menu a{      
+     background-color: #0c6168;
+     border-radius: 10px;     
+     margin: 7px 0px;  
+     padding: 10px;      
+ }
+
+ .navbar-menu a:hover{
+    background-color: gray;
+    /* text-decoration: underline; */
+ }
+
+ .navbar::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/* navbar design ends here  */
+
+
+
+/* profile design starts here  */
+.profile{
+    position: relative;    
+    padding: 130px 10px;
+    text-align: center;  
+}
+
+.profile .top-weather-icon{
+  position: absolute;
+  right: 60px;
+  top: 20px;  
+  transition: transform 2s;
+}
+
+.profile .top-weather-icon:hover{
+    transform: rotate(360deg);
+}
+
+.profile-desc h1{
+    font-family: 'Satisfy', cursive;
+    font-size: 3rem;
+}
+
+.profile-desc p{   
+    color: gray;  
+    margin: 0 auto 20px auto;
+    text-align: center;  
+    width: 90%;    
+}
+
+
+.profile .bottom-weather-icon{
+    bottom: 10px;
+    left: 60px;
+    position: absolute;   
+    transition: transform 2s;
+} 
+
+.profile .bottom-weather-icon:hover{
+    transform: rotate(360deg);
+} 
+
+.profile::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+/* profile design ends here  */
+
+
+
+
+/* tutorial div design starts here  */
+
+.tutorial{
+    background-color: gray;
+    padding: 1% 7%;
+    padding-bottom: 50px;
+
+}
+
+.tutorial h2{
+    color: white; 
+    text-transform: uppercase;
+}
+
+.all-subjects{
+      
+}
+
+.subject-card{
+    position: relative; 
+}
+
+.subject-card .subject-title{
+    background-color: rgba(0, 0, 0, 0.7);
+    bottom: -20px;
+    color: white;
+    left: 50%;
+    position: absolute;    
+    text-align: center;
+    transform: translate(-50%, -50%);
+    width: 96%;
+}
+
+.subject-card img{
+    width: 100%;
+}
+
+.row::after{
+    clear: both;
+    content: '';
+    display: table;
+}
+
+/* tutorial div design ends here  */
+
+
+
+
+/* about me starts here  */
+.about-me{
+   
+    background-color: #39a4ac;
+    color: white;
+    font-family: 'Montserrat', sans-serif; 
+    padding: 1% 7%;  
+    text-align: center; 
+}
+
+.about-me p{  
+    /* font-size: 1rem;  */
+    text-align: center;   
+}
+
+.aboutme-image img{   
+    border: 5px solid white;
+    border-radius: 50%; 
+    height: 220px;
+    width: 200px; 
+     
+}
+
+.aboutme-desc a{
+    font-size: 1.2rem;
+}
+
+.cv-button{
+    background-color: #052d2f; 
+    border: none;
+    border-radius: 12px;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 10px; 
+    padding: 15px;
+    text-align: center;
+}
+
+.about-me::after{
+    clear: both;
+    content: '';   
+    display: table;
+}
+/* about me ends here  */
+
+
+/* professional experience div starts here  */
+.professional-experience{
+    padding: 1% 0%;      
+}
+
+.professional-experience .card{
+    background-color: #a39e9e;
+    border-radius: 5px;
+    padding-bottom: 20px;
+    transition: 0.3s;
+    height: 700px;    
+}
+.card:hover {   
+    box-shadow: 0 4px 8px 5px black;
+}
+
+.card-icon{
+    text-align: center;
+}
+.card-icon img{
+    margin-top: 20px;
+    width: 100px;
+}
+.rounded-img{
+    border: 5px solid white;
+    border-radius: 50%;   
+    padding: 15px;   
+}
+
+.card-title h2{
+    background-color: #616161 ;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.skills-container{
+    padding-right: 45px;
+}
+
+/* progress bar for skill div starts here  */
+.skills-container li{
+    font-weight: bolder;
+    list-style: none;
+    margin: 30px 10px;
+    position: relative;
+    text-transform: uppercase;  
+}
+
+.skills-container li::before{
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(86, 86, 153, .5);
+    border-radius: 1000px;
+}
+
+
+.skills-container li::after{
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    width: 0;
+    height: 10px;
+    background-color: rgb(86, 86, 153, 1);
+    border-radius: 1000px;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    /* animation-direction: alternate; */
+    animation-iteration-count: 3;
+}
+
+
+.skills-container li.html::after{
+   animation-name: html;
+}
+
+@keyframes html{
+    to{
+        width: 90%;
+        /* background-color: orange; */
+    }
+}
+.skills-container li.css::after{
+   animation-name: css;
+}
+
+@keyframes css{
+    to{
+        width: 80%;
+    }
+}
+
+.skills-container li.bootstrap::after{
+    animation-name: bs;
+ }
+ 
+ @keyframes bs{
+     to{
+         width: 85%;
+     }
+ }
+
+.skills-container li.js::after{
+   animation-name: js;
+}
+
+@keyframes js{
+    to{
+        width: 75%;
+    }
+}
+
+.skills-container li.jquery::after{
+    animation-name: jq;
+ }
+ 
+ @keyframes jq{
+     to{
+         width: 80%;
+     }
+ }
+
+
+
+.skills-container li.node::after{
+   animation-name: node;
+}
+
+@keyframes node{
+    to{
+        width: 85%;
+    }
+}
+
+.skills-container li.express::after{
+    animation-name: express;
+ }
+ 
+ @keyframes express{
+     to{
+         width: 75%;
+     }
+ }
+
+ .skills-container li.git::after{
+    animation-name: github;
+ }
+ 
+ @keyframes github{
+     to{
+         width: 75%;
+     }
+ }
+ 
+
+.skills-container li.react::after{
+   animation-name: react;
+}
+
+@keyframes react{
+    to{
+        width: 65%;
+    }
+}
+
+/* progress bar for skill div starts here  */
+
+
+
+.professional-experience::after{
+    clear: both;
+    content: '';   
+    display: table;
+}
+/* professional-experience div ends here  */
+
+
+
+/* achievement-contact div starts here  */
+.achievement-contact{
+    padding: 1% 7%;
+    background-color: #39a4ac;
+    color: white; 
+}
+
+.contact{
+    text-align: center;
+}
+
+.contact input, textarea{
+    /* width: 80%;
+    transition: width 0.3s ease-in-out; */
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+}
+
+.contact button{           
+    border: none;
+    border-radius: 12px;
+    background-color: #052d2f; 
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 10px; 
+    padding: 15px;
+    width: 100px;   
+}
+
+/* .contact input:focus, textarea:focus, button:focus{
+    background-color: gray;
+    width: 100%;
+} */
+  
+.contact-links{
+    text-align: center; 
+    margin-bottom: 20px;     
+} 
+
+
+
+.media-buttons .btn{
+    border: none; 
+    border-radius: 25px;    
+    cursor: pointer;     
+    font-size: 32px;
+    margin: 10px;
+    padding: 5px; 
+    width: 50px;
+    background-color: white;
+  }
+  
+  /* Darker background on mouse-over */
+  .btn:hover {
+    background-color: gray;
+  }
+
+
+.achievement-contact::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+/* achievement-contact div ends here  */
+
+
+
+/* footer div starts here  */
+.footer{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.8rem;
+    
+}
+
+.footer-menu a{
+    display: block;
+    font-size: 1rem;
+    margin: 15px 0;
+}
+
+.footer-menu a:hover{
+    color: gray;
+}
+
+.footer::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+/* footer div ends here  */
+
+
+ /* Extra small devices (phones, 600px and down) */
+ /* @media only screen and (max-width: 600px) {} */
+
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ /* @media only screen and (min-width: 600px) {} */
+ 
+ /* Medium devices (landscape tablets, 768px and up) */
+ /* @media only screen and (min-width: 768px) {} */
+ 
+ /* Large devices (laptops/desktops, 992px and up) */
+ /* @media only screen and (min-width: 992px) {} */
+ 
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+ /* @media only screen and (min-width: 1200px) {}  */
